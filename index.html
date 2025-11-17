@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JME Admin Mockup</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            
+            <!-- Sidebar Navigation, helps assistive tech -->
+            <nav class="sidebar">
+                <div class="admin-dash">
+                    <i class="fa-solid fa-fingerprint"></i> Dashboard
+                </div>
+                <ul class="nav-links">
+                    <li class="side-content">
+                        <i class="fa-solid fa-house"></i> Home
+                    </li>
+                    <li class="side-content">
+                        <i class="fa-solid fa-user"></i> Profile
+                    </li>
+                    <li class="side-content">
+                        <i class="fa-solid fa-message"></i> Messages
+                    </li>
+                    <li class="side-content">
+                        <i class="fa-solid fa-clock"></i> History
+                    </li>
+                    <li class="side-content">
+                        <i class="fa-solid fa-list-check"></i> Tasks
+                    </li>
+                    <li class="side-content">
+                        <i class="fa-solid fa-gear"></i> Settings
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header with search, notif, and current user info -->
+            <header class="header">
+                <div class="header-top">
+                    <div class="search">
+                        <label for="query" class="search-logo">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                        <form id="search-form">
+                            <input type="search" id="query" name="q" placeholder="Search...">
+                        </form>
+                    </div>
+
+                    <div class="notification">
+                        <button class="notification-btn" aria-label="View notifications">
+                            <i class="fa-solid fa-bell"></i>
+                        </button>
+                    </div>
+
+                    <div class="current-user">
+                        <div class="user-profile-small">MRME</div>
+                        <p class="user-name">Maru Esguerra</p>
+                    </div>
+                </div>
+
+                <div class="header-bottom">
+                    <div class="user-details">
+                        <div class="user-profile-big">MRME</div>
+                        <div class="user-text">
+                            <p class="user-greeting">Hi there,</p>
+                            <p class="username">Maru Esguerra (@mrmesg)</p>
+                        </div>
+                    </div>
+
+                    <div class="action-nav">
+                        <ul>
+                            <li><button class="action-btn">New</button></li>
+                            <li><button class="action-btn">Upload</button></li>
+                            <li><button class="action-btn">Share</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main content for project tracking -->
+            <main class="main-content">
+                <h2 class="mc-header">Currently in Production</h2>
+
+                <div class="products-grid">
+                    <article class="card">
+                        <h3 class="card-title">250ML Medicine Box</h3>
+                        <p class="card-description">Specs: Lorem ipsum dolor sit amet...</p>
+                        <div class="card-actions">
+                            <button class="card-action" aria-label="Add to favorites">
+                                <i class="fa-solid fa-star"></i>
+                            </button>
+                            <button class="card-action" aria-label="View details">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button class="card-action" aria-label="Share">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">120ML Medicine Box</h3>
+                        <p class="card-description">Specs: Lorem ipsum dolor sit amet...</p>
+                        <div class="card-actions">
+                            <button class="card-action" aria-label="Add to favorites">
+                                <i class="fa-solid fa-star"></i>
+                            </button>
+                            <button class="card-action" aria-label="View details">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button class="card-action" aria-label="Share">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">250ML Medicine Label</h3>
+                        <p class="card-description">Specs: Lorem ipsum dolor sit amet...</p>
+                        <div class="card-actions">
+                            <button class="card-action" aria-label="Add to favorites">
+                                <i class="fa-solid fa-star"></i>
+                            </button>
+                            <button class="card-action" aria-label="View details">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button class="card-action" aria-label="Share">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">120ML Medicine Label</h3>
+                        <p class="card-description">Specs: Lorem ipsum dolor sit amet...</p>
+                        <div class="card-actions">
+                            <button class="card-action" aria-label="Add to favorites">
+                                <i class="fa-solid fa-star"></i>
+                            </button>
+                            <button class="card-action" aria-label="View details">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button class="card-action" aria-label="Share">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">250ML Medicine Insert</h3>
+                        <p class="card-description">Specs: Lorem ipsum dolor sit amet...</p>
+                        <div class="card-actions">
+                            <button class="card-action" aria-label="Add to favorites">
+                                <i class="fa-solid fa-star"></i>
+                            </button>
+                            <button class="card-action" aria-label="View details">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button class="card-action" aria-label="Share">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">120ML Medicine Insert</h3>
+                        <p class="card-description">Specs: Lorem ipsum dolor sit amet...</p>
+                        <div class="card-actions">
+                            <button class="card-action" aria-label="Add to favorites">
+                                <i class="fa-solid fa-star"></i>
+                            </button>
+                            <button class="card-action" aria-label="View details">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <button class="card-action" aria-label="Share">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </main>
+
+            <!-- Announcements sidebar - aside as complementary to main -->
+            <aside class="announcements">
+                <h2 class="sidebar-header">Announcements</h2>
+
+                <article class="announcement-content">
+                    <h3 class="announcement-title">Site Maintenance</h3>
+                    <p class="announcement-description">Nullam condimentum ipsum ut lectus vehicula consectetur.</p>
+                </article>
+
+                <article class="announcement-content">
+                    <h3 class="announcement-title">Upcoming Holiday</h3>
+                    <p class="announcement-description">Nullam condimentum ipsum ut lectus vehicula consectetur.</p>
+                </article>
+
+                <article class="announcement-content">
+                    <h3 class="announcement-title">Collection Calls</h3>
+                    <p class="announcement-description">Nullam condimentum ipsum ut lectus vehicula consectetur.</p>
+                </article>
+            </aside>
+
+            <!-- Team Details - also using aside as complementary to main -->
+            <aside class="team">
+                <h2 class="sidebar-header">Team</h2>
+
+                <article class="team-member">
+                    <div class="tm-dp">GME</div>
+                    <div class="tm-info">
+                        <p class="tm-user">@gmesg</p>
+                        <p class="tm-jd">Asst. Operations Manager</p>
+                    </div>
+                </article>
+
+                <article class="team-member">
+                    <div class="tm-dp">MRME</div>
+                    <div class="tm-info">
+                        <p class="tm-user">@mrmesg</p>
+                        <p class="tm-jd">Administration Manager</p>
+                    </div>
+                </article>
+
+                <article class="team-member">
+                    <div class="tm-dp">JME</div>
+                    <div class="tm-info">
+                        <p class="tm-user">@jmesg</p>
+                        <p class="tm-jd">Finance Manager</p>
+                    </div>
+                </article>
+
+                <article class="team-member">
+                    <div class="tm-dp">OAE</div>
+                    <div class="tm-info">
+                        <p class="tm-user">@oaesg</p>
+                        <p class="tm-jd">Operations Manager</p>
+                    </div>
+                </article>
+            </aside>
+
+        </div>
+    </body>
+</html>

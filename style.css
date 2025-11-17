@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Grid Layout */
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 250px 3fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas: 
+        "sidebar header header"
+        "sidebar main announcements"
+        "sidebar main team";
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    background-color: #185640;
+    grid-area: sidebar;
+    color: white;
+    padding: 20px;
+}
+
+.admin-dash {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.side-content {
+    padding: 15px 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.side-content:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Header */
+.header {
+    grid-area: header;
+    background-color: #f8f9fa;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #e8e9eb;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.search-logo {
+    color: #666;
+}
+
+#search-form {
+    flex: 1;
+}
+
+#query {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+}
+
+.notification-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.current-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-profile-small {
+    width: 50px;
+    height: 50px;
+    background-color: #d7a360;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-profile-big {
+    width: 70px;
+    height: 70px;
+    background: #d7a360;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.user-greeting {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.username {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.action-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.action-btn {
+    background: #185640;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #134533;
+}
+
+/* Main Content */
+.main-content {
+    grid-area: main;
+    padding: 30px;
+    background-color: #e8e9eb;
+    overflow-y: auto;
+}
+
+.mc-header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 6px solid #d7a360;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-description {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.card-action {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.card-action:hover {
+    color: #d7a360;
+}
+
+/* Announcements Sidebar */
+.announcements {
+    grid-area: announcements;
+    padding: 30px 25px;
+    background-color: #e8e9eb;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.announcement-content {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-content:last-child {
+    margin-bottom: 0;
+}
+
+.announcement-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.announcement-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Team Sidebar */
+.team {
+    grid-area: team;
+    padding: 30px 25px;
+    background-color: #e8e9eb;
+    overflow-y: auto;
+}
+
+.team-member {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-member:last-child {
+    margin-bottom: 0;
+}
+
+.tm-dp {
+    width: 50px;
+    height: 50px;
+    background-color: #d7a360;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.tm-user {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.tm-jd {
+    font-size: 0.85rem;
+    color: #666;
+}
